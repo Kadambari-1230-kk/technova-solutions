@@ -1,1 +1,494 @@
 
+/* =====================================
+   1. GENERAL STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+}
+
+
+/* =====================================
+   2. NAVBAR
+===================================== */
+
+.navbar {
+    background-color: #071a36;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar-brand span,
+.footer span {
+    color: #00c4e8;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00c4e8 !important;
+}
+
+.navbar .btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+
+/* =====================================
+   3. HERO SECTION
+===================================== */
+
+.hero-section {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 70px;
+    background: linear-gradient(120deg, #071a36, #123c69);
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.hero-section h1 span {
+    display: block;
+    color: #00c4e8;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #d5e1ef;
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+.hero-section .btn {
+    padding: 13px 25px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.hero-icon {
+    font-size: 180px;
+    color: #00c4e8;
+}
+
+
+/* =====================================
+   4. COMMON SECTION STYLING
+===================================== */
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #071a36;
+}
+
+.section-title h2 span {
+    color: #007bff;
+}
+
+.section-title p {
+    color: #777;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   5. ABOUT SECTION
+===================================== */
+
+.about-image {
+    background: #eaf4ff;
+    min-height: 320px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #007bff;
+    font-size: 130px;
+}
+
+#about h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #071a36;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   6. SERVICES SECTION
+===================================== */
+
+.services-section {
+    background-color: #f4f8fc;
+}
+
+.service-card {
+    background: white;
+    padding: 35px 25px;
+
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-card i {
+    font-size: 45px;
+    color: #007bff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.service-card h4 {
+    color: #071a36;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   7. WHY CHOOSE US SECTION
+===================================== */
+
+.choose-card {
+    text-align: center;
+    padding: 30px 20px;
+
+    background: white;
+    border-radius: 12px;
+    height: 100%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.choose-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.choose-card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.choose-card h5 {
+    color: #071a36;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.choose-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   8. PROJECTS SECTION
+===================================== */
+
+.projects-section {
+    background-color: #f4f8fc;
+}
+
+.project-card {
+    background: white;
+    padding: 35px 20px;
+
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+
+    border: 1px solid #e5e5e5;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background: #071a36;
+    color: white;
+
+    transform: translateY(-7px);
+}
+
+.project-card i {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.project-card h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.project-card:hover p {
+    color: #d5e1ef;
+}
+
+
+/* =====================================
+   9. TESTIMONIAL SECTION
+===================================== */
+
+.testimonial-card {
+    padding: 40px;
+
+    background: #f4f8fc;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card i {
+    font-size: 45px;
+    color: #007bff;
+}
+
+.testimonial-card p {
+    color: #555;
+    line-height: 1.8;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+.testimonial-card h5 {
+    color: #071a36;
+    font-weight: bold;
+}
+
+.testimonial-card small {
+    color: #777;
+}
+
+
+/* =====================================
+   10. CONTACT SECTION
+===================================== */
+
+.contact-section {
+    background: #f4f8fc;
+}
+
+.contact-form {
+    padding: 35px;
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.form-control {
+    padding: 13px;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form button {
+    padding: 12px 25px;
+}
+
+
+/* =====================================
+   11. FOOTER
+===================================== */
+
+.footer {
+    background: #071a36;
+    color: white;
+
+    padding: 45px 0 25px;
+}
+
+.footer h3 {
+    font-weight: bold;
+}
+
+.footer p {
+    color: #c4d1df;
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+
+    margin: 0 10px;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00c4e8;
+}
+
+.footer hr {
+    border-color: #8090a5;
+    margin: 25px 0;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+
+/* =====================================
+   12. BUTTON STYLING
+===================================== */
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* =====================================
+   13. RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 991px) {
+
+    .navbar .btn {
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-icon {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    .hero-section h1 {
+        font-size: 34px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .hero-icon {
+        font-size: 120px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-section h1 {
+        font-size: 29px;
+    }
+
+    .hero-section .btn {
+        margin: 5px 0;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+}
+
